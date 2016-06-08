@@ -1,0 +1,8 @@
+system:
+  nbd_server: "ubuntu14"
+hooks:
+  pre_setup: ./setup.sh
+tests:
+  - ./u14test.sh
+  - ./test1.sh
+  - ./test2.sh
