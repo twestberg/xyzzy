@@ -1,5 +1,5 @@
 system:
-  nbd_server: "ubuntu14"
+  nbd_server: "ubuntu14-local"
 hooks:
   pre_setup: ./setup.sh
 tests:
