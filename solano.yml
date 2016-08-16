@@ -1,5 +1,7 @@
-system:
-  nbd_server: "ubuntu14-snbd"
+#system:
+#  nbd_server: "ubuntu14-snbd"
+redis:
+  version: 2.8.21
 hooks:
   pre_setup: ./setup.sh
 tests:
