@@ -22,5 +22,5 @@ if [ -d $MYSQL_HOME ] ; then
 	ls $MYSQL_HOME
 	cat $MYSQL_HOME/*
 fi
-mysql --socket $MYSQL_UNIX_PORT --user $$TDDIUM_DB_MYSQL_NAME --password $TDDIUM_DB_PASSWORD --execute "SHOW TABLES;"
+mysql --socket $MYSQL_UNIX_PORT -u $$TDDIUM_DB_MYSQL_NAME -p $TDDIUM_DB_PASSWORD -e "SHOW TABLES;" $TDDIUM_DB_NAME
 exit 0
