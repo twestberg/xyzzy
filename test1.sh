@@ -22,4 +22,5 @@ if [ -d $MYSQL_HOME ] ; then
 	ls $MYSQL_HOME
 	cat $MYSQL_HOME/*
 fi
+mysql --execute "SHOW TABLES;"
 exit 0
