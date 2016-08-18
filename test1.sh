@@ -17,4 +17,8 @@ if [ -f config/database-tddium.yml ]
 	cat config/database-tddium.yml ]
 fi
 
+if [ -f $MYSQL_HOME/my.cnf ] ; then
+	echo "my.cnf"
+	cat $MYSQL_HOME/my.cnf
+fi
 exit 0
