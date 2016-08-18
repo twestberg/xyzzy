@@ -1,13 +1,11 @@
 system:
    use_setup_phase: service
 #  nbd_server: "ubuntu14-snbd"
-postgres:
-  version: 9.2
 hooks:
   pre_setup: ./setup.sh
 tests:
   - ./u14test.sh
   - ./test1.sh
   - ./test2.sh
-redis:
-  version: 3.0
+mysql:
+  adapter: 'mysql2'
