@@ -19,6 +19,7 @@ fi
 
 if [ -f $MYSQL_HOME/my.cnf ] ; then
 	echo "my.cnf"
+	ls $MYSQL_HOME
 	cat $MYSQL_HOME/my.cnf
 fi
 exit 0
