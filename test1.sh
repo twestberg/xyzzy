@@ -5,22 +5,22 @@ cat test1.txt
 ls -l
 printenv
 ls -l config
-if [ -f config/database.yml ] 
-	then
-	echo "config/database.yml"
-	cat config/database.yml
-fi
-if [ -f config/database-tddium.yml ]
-	then
+# if [ -f config/database.yml ] 
+# 	then
+# 	echo "config/database.yml"
+# 	cat config/database.yml
+# fi
+# if [ -f config/database-tddium.yml ]
+# 	then
 	
-	echo "config/database-tddium.yml"
-	cat config/database-tddium.yml 
-fi
+# 	echo "config/database-tddium.yml"
+# 	cat config/database-tddium.yml 
+# fi
 
 if [ -d $MYSQL_HOME ] ; then
 	echo "my.cnf"
 	ls $MYSQL_HOME
 	cat $MYSQL_HOME/*
 fi
-mysql --execute "SHOW TABLES;"
+mysql --socket $MYSQL_UNIX_PORT --execute "SHOW TABLES;"
 exit 0
