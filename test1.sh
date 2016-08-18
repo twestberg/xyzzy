@@ -1,5 +1,5 @@
 #!/bin/bash
-sleep 20
+sleep 2
 echo  "Did Test1" > test1.txt
 cat test1.txt
 ls -l
@@ -24,6 +24,6 @@ if [ -d $MYSQL_HOME ] ; then
 fi
 mysql --socket=$MYSQL_UNIX_PORT --user=$TDDIUM_DB_USER --password=$TDDIUM_DB_PASSWORD --execute="SHOW TABLES;" foo # $TDDIUM_DB_NAME
 echo "trying through network"
-mysql --port=$TDDIUM_DB_PORT --host=$TDDIUM_DB_MSQL_HOST --user=$$TDDIUM_DB_USER --password=$TDDIUM_DB_PASSWORD --execute="SHOW TABLES;" $TDDIUM_DB_NAME
+mysql --port=$TDDIUM_DB_PORT --host=$TDDIUM_DB_MYSQL_HOST --user=$$TDDIUM_DB_USER --password=$TDDIUM_DB_PASSWORD --execute="SHOW TABLES;" $TDDIUM_DB_NAME
 
 exit 0
