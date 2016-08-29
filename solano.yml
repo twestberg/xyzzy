@@ -1,6 +1,6 @@
 system:
    use_setup_phase: service
-#  nbd_server: "ubuntu14-snbd"
+   nbd_server: "ubuntu14"
 hooks:
   pre_setup: ./setup.sh
 tests:
