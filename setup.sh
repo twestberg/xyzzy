@@ -1,4 +1,4 @@
 #!/bin/bash
-sleep 20
+sleep 2
 echo  "Setup was done" > done.txt
 exit 0
