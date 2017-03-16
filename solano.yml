@@ -9,3 +9,5 @@ tests:
   - ./test2.sh
 mysql:
   adapter: 'mysql2'
+timeout: 1800
+timeout_hook: 1800
