@@ -1,4 +1,5 @@
 #!/bin/bash
+hostname
 sleep 1
 echo  "Did Test1" > test1.txt
 cat test1.txt

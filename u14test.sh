@@ -1,4 +1,5 @@
 #!/bin/bash
+hostname
 DESC=`lsb_release -d | cut -f 2`
 EXPECTED="Ubuntu 14.04.3 LTS"
 if [ "$DESC" != "$EXPECTED" ] ; then
