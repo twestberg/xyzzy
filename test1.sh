@@ -4,7 +4,8 @@ sleep 1
 echo  "Did Test1" > test1.txt
 cat test1.txt
 ls -l
-# printenv
+printenv
+ls /dev/nbd*
 # ls -l config
 # if [ -f config/database.yml ] 
 # 	then
