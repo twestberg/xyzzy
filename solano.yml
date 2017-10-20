@@ -4,7 +4,7 @@ system:
 hooks:
   pre_setup: ./setup.sh
 tests:
-  - ./bxtest.sh
+  - ./testbx.sh
   - ./test1.sh
   - ./test2.sh
 mysql:
