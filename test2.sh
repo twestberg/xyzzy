@@ -1,6 +1,6 @@
 #!/bin/bash
-printenv
 ls /dev/nbd*
+ls /tmp
 hostname
 sleep 1
 echo  "Did Test2" > test2.txt
