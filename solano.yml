@@ -6,3 +6,4 @@ tests:
   - ./u14test.sh
   - ./test1.sh
   - ./test2.sh
+script: ./test1.sh
